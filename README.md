@@ -21,7 +21,7 @@ Before you begin, ensure you have met the following requirements:
 
 To install the Angular Starter Project, follow these steps:
 
-1. Clone the repo: `git clone https://github.com/JhayCodee/angular-starter-project.git`
+1. Clone the repo: `git clone https://github.com/JhayCodee/angular-intro.git`
 2. Navigate into the project directory: `cd angular-starter-project`
 3. Install the dependencies: `npm install`
 4. Run the dev server: `ng serve`
