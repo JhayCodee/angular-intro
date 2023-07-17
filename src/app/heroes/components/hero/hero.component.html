@@ -1,35 +1,32 @@
-<h1 class="display-4 text-primary">{{ name }}</h1>
+<div class="d-flex flex-column align-items-center justify-content-center">
+  <h1 class="display-4 text-dark mb-4">{{ name }}</h1>
 
-<dl class="row">
-  <dt class="col-sm-3">Nombre</dt>
-  <dd class="col-sm-9">{{ name }}</dd>
+  <ul class="list-unstyled text-center fs-4">
+    <li class="mb-2"><span class="text-info me-2">Nombre:</span> <span class="text-secondary">{{ name }}</span></li>
+    <li class="mb-2"><span class="text-info me-2">Edad:</span> <span class="text-secondary">{{ age }}</span></li>
+    <li class="mb-2"><span class="text-info me-2">Metodo:</span> <span class="text-secondary">{{ getHeroDescription() }}</span></li>
+    <li class="mb-2"><span class="text-info me-2">Capitalizado:</span> <span class="text-secondary">{{ capitzalizaName }}</span></li>
+  </ul>
 
-  <dt class="col-sm-3">Edad:</dt>
-  <dd class="col-sm-9">{{ age }}</dd>
+  <div class="btn-group mt-4" role="group" aria-label="Hero controls">
+    <button
+      *ngIf="name !== 'Spiderman'"
+      (click)="changeHero()"
+      class="btn btn-outline-primary btn-lg mx-2 ms-0">
+      Cambiar Nombre
+    </button>
 
-  <dt class="col-sm-3">Metodo</dt>
-  <dd class="col-sm-9">{{ getHeroDescription() }}</dd>
+    <button
+      *ngIf="age !== 23"
+      (click)="changeAge()"
+      class="btn btn-outline-primary btn-lg">
+      Cambiar Edad
+    </button>
 
-  <dt class="col-sm-3">Capitalizado</dt>
-  <dd class="col-sm-9">{{ capitzalizaName }}</dd>
-</dl>
-
-<button
-  *ngIf="name !== 'Spiderman'"
-  (click)="changeHero()"
-  class="btn btn-primary mx-2 ms-0">
-  Cambiar Nombre
-</button>
-
-<button
-  *ngIf="age !== 23"
-  (click)="changeAge()"
-  class="btn btn-primary">
-  Cambiar Edad
-</button>
-
-<button
-  (click)="resetForm()"
-  class="btn btn-primary ms-2">
-  Reset
-</button>
+    <button
+      (click)="resetForm()"
+      class="btn btn-outline-primary btn-lg ms-2">
+      Reset
+    </button>
+  </div>
+</div>
