@@ -1,0 +1,19 @@
+<div class="container mt-4">
+  <h1 class="text-center">Dbz Personajes</h1>
+  <hr>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+    </div>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <dbz-list
+        [characterList]="characters"
+        (onDeleteCharacter)="onDeleteCharacter($event)">
+      </dbz-list>
+    </div>
+  </div>
+</div>

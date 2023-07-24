@@ -1,0 +1,22 @@
+<div class="row row-cols-1 row-cols-md-2 g-4 d-flex align-items-stretch">
+  <div
+    *ngFor="let character of characterList; let i = index"
+    class="col mb-4 d-flex"
+  >
+    <div class="card h-100 w-100 text-white bg-dark mb-3 shadow card-custom">
+      <img [src]=" character.img ||'https://i.pinimg.com/236x/a7/53/b6/a753b64848c55e69c65810c227ea8f29--dragon-ball-z-party-dragonball-z.jpg'" class="card-img-top" alt="{{ character.name }}">
+      <div class="card-img-overlay">
+        <button
+          (click)="DeleteCharacter(character.id!)"
+          class="btn btn-delete position-absolute top-0 end-0"
+        >
+          X
+        </button>
+      </div>
+      <div class="card-body card-body-custom">
+        <h5 class="card-title">{{ character.name }}</h5>
+        <p class="card-text">Power: {{ character.power }}</p>
+      </div>
+    </div>
+  </div>
+</div>
