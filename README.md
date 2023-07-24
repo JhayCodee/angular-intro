@@ -1,10 +1,11 @@
 # 🚀 Angular Starter Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4. It's a basic Angular application designed to demonstrate various fundamental concepts and features of Angular. The application includes three main components:
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4. It's a basic Angular application designed to demonstrate various fundamental concepts and features of Angular. The application now includes four main components:
 
 - 🧮 A Counter component that allows users to increment, decrement, and reset a counter.
 - 🦸 A Hero component that displays information about a hero and provides buttons to change the hero's name and age.
 - 📜 A Heroes List component that displays a list of heroes and provides a button to remove the last hero from the list.
+- 🐉 A DBZ module that includes a form for adding Dragon Ball Z characters, and a list component to display and delete these characters.
 
 ## 🚀 Getting Started
 
